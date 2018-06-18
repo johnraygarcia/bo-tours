@@ -1,0 +1,11 @@
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin gradientBackground($name){
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8)), url("../img/#{$name}.jpg");
+}

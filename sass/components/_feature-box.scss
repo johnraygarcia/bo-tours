@@ -1,0 +1,36 @@
+.section-features {
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}
+
+.feature-box {
+
+    background-color: rgba(#fff, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    
+
+    &__icon {
+        font-size: 6rem;
+        background-image: linear-gradient(to right, rgba(98, 238, 5, 0.733), $color-primary-dark);
+        display: inline-block;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__text {
+        
+    }
+
+    &:hover {
+        transform: scale(1.1) translateY(-1rem);
+        transition: all .8s;
+    }
+}

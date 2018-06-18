@@ -1,0 +1,51 @@
+
+.logo-box {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+}
+
+.header {
+    @include gradientBackground("hero");
+    background-size: cover;
+    background-position: top center;
+    height: 95vh;
+    clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    .heading-primary {
+        margin-bottom: 5rem;
+    }
+
+    .text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        backface-visibility: hidden;
+        text-align: center;
+    }
+
+    .heading-primary span {
+        text-transform: uppercase;
+        color: $color-mint-cream;
+        display: block;
+    }
+
+    .heading-primary .heading-primary-main {
+        font-size: 6rem;
+        letter-spacing: 3.5rem;
+        text-shadow: 1px 1px #aba7a7;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+    }
+
+    .heading-primary .heading-primary-sub {
+        font-size: 3.5rem;
+        letter-spacing: .9rem;
+        font-weight: 400;
+        /* padding-left: 8px; */
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        text-align: left;
+    }
+}
